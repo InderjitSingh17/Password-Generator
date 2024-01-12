@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="Container">
+            <!-- Password Display -->
+            <input readonly type="text" class="PasswordDisplay">
+            
+            <!-- Strength And Copy Section -->
+            <div class="copy-strength-box">
+                <div class="strength"></div>
+                <div class="copy"><span class="material-symbols-outlined">content_copy</span></div>
+            </div>
+
+            <h2 class="pl-text">Password Length</h2>
+
+            <!-- Password-length & Range -->
+            <div class="Password-length-box">
+                <div class="display-password-Length"></div>
+                <div class="Range-box">
+                    <input class="range-length" type="range" min="1" max="20" step="1">
+                </div>
+            </div>
+
+            <!-- Include Box -->
+            <div class="include-box">
+                <div class="Box">
+                    <input type="checkbox" class="check-box UpperCase">
+                    <label for="UpperCase">
+                        <h3>Upper Case Include</h3>
+                    </label>
+                </div>
+                <div class="Box">
+                    <input type="checkbox" class="check-box LowerCase">
+                    <label for="LowerCase">
+                        <h3>Lower Case Include</h3>
+                    </label>
+                </div>
+                <div class="Box">
+                    <input type="checkbox" class="check-box NumberCase">
+                    <label for="NumberCase">
+                        <h3>Number Include</h3>
+                    </label>
+                </div>
+                <div class="Box">
+                    <input type="checkbox" class="check-box SymbelCase">
+                    <label for="SymbelCase">
+                        <h3>Symbol Include</h3>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Generator BTN -->
+            <button class="BTN"> <h2>Password Generator</h2></button>
+        </div>
+    </div>
+
+
+    <!-- JS Files -->
+    <script src="script.js"></script>
+</body>
+
+</html>
